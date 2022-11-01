@@ -30,6 +30,7 @@ target_link_libraries( pose_estimation_2d2d ${OpenCV_LIBS} )
 add_executable( triangulation triangulation.cpp )
 target_link_libraries( triangulation ${OpenCV_LIBS} )
 
+# 在编译Sophus库时，也需将其链接至项目，否则编译会不通过
 add_executable( pose_estimation_3d2d pose_estimation_3d2d.cpp )
 target_link_libraries( pose_estimation_3d2d
         g2o_core g2o_stuff
