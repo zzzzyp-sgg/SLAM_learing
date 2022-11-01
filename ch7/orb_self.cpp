@@ -12,18 +12,6 @@ std::string second_file = "../2.png";
 // 一个灰度值通常用32行8列来表示
 // 对应的，当比较时，每次比较8位，比较32次
 // 32 bit unsigned int , will have 8, 8*32=256
-#include<opencv2/opencv.hpp>
-#include<string>
-#include<nmmintrin.h>       // MMX 指令集头文件
-#include<chrono>
-
-using std::vector;
-
-// 全局变量
-std::string first_file  = "../1.png";
-std::string second_file = "../2.png";
-
-// 32 bit unsigned int , will have 8, 8*32=256
 typedef vector<uint32_t> DescType;             // 描述子的数据类型
 
 /**
